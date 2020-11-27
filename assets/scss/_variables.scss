@@ -1,0 +1,36 @@
+// Colors
+$blue: #59bdc5;
+$gray: #2c2a29;
+$bg-light: #f4f4f4;
+
+// Breakpoints
+$xs: 575.98px;
+$sm: 767.98px;
+$md: 991.98px;
+$lg: 1199.98px;
+
+$mt-1: 1rem;
+$mr-1: 1rem;
+$mb-1: 1rem;
+$ml-1: 1rem;
+
+$mt-2: 2rem;
+$mr-2: 2rem;
+$mb-2: 2rem;
+$ml-2: 2rem;
+
+$mt-3: 3rem;
+$mr-3: 3rem;
+$mb-3: 3rem;
+$ml-3: 3rem;
+
+@font-face {
+  font-family: 'Objetive';
+  src: url('../fonts/objective-regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Objetive-bold';
+  src: url('../fonts/objective-bold.otf');
+  font-weight: bold;
+}

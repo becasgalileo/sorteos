@@ -1,0 +1,144 @@
+.bar {
+  width: 100%;
+  min-height: 610px;
+  max-height: 700px;
+  height: 100vh;
+  position: relative;
+  min-width: 300px;
+  @media screen and(max-width: $lg) {
+    min-height: 600px;
+  }
+  @media screen and(max-width: $sm) {
+    min-height: 450px;
+    height: auto;
+  }
+
+  background-color: $gray;
+  .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    .content {
+      border-radius: 7px;
+
+      @media screen and (max-width: $md) {
+        padding: 2rem;
+      }
+      @media screen and (max-width: $sm) {
+        padding: 1rem;
+        padding-left: 0rem;
+        padding-bottom: 0rem;
+      }
+      @media screen and (max-width: $xs) {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+
+    @media screen and (max-width: $md) {
+      padding: 2rem;
+    }
+    @media screen and (max-width: $sm) {
+      align-items: flex-end;
+    }
+    @media screen and (max-width: $xs) {
+      padding: 1rem;
+      // background-color: $blue;
+    }
+  }
+
+  &__list {
+    display: flex;
+    ul {
+      margin-left: 0.5rem;
+      list-style: none;
+    }
+    ul li {
+      color: white;
+      font-family: 'Objetive';
+      line-height: 1.5rem;
+    }
+
+    ul li:before {
+      content: url('../img/backgrounds/blue-triangle.png');
+      margin-right: 10px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &__figure {
+    background-image: url('../img/backgrounds/third.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    @media screen and (min-width: 937px) {
+      display: none;
+    }
+    @media screen and (max-width: $sm) {
+      background-size: cover;
+    }
+  }
+
+  &__background {
+    background-image: url('../img/backgrounds/bar.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    @media screen and (max-width: $sm) {
+      background-size: cover;
+    }
+    @media screen and (max-width: $xs) {
+      height: 50%;
+    }
+  }
+
+  &__blue-figure {
+    background-image: url('../img/backgrounds/bar-blue.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+  }
+
+  .decoration {
+    position: absolute;
+    z-index: 6;
+    bottom: 5%;
+    right: calc(37% + 1vw);
+    @media screen and(max-width: $lg) {
+      right: 40%;
+    }
+    @media screen and(max-width: 1100px) {
+      right: 44%;
+    }
+    @media screen and(max-width: $md) {
+      right: 48%;
+    }
+    @media screen and(max-width: $sm) {
+      right: 10%;
+    }
+    @media screen and(max-width: 450px) {
+      display: none;
+    }
+  }
+}
